@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>古富綿 · Personal Page</title>
+  <meta name="description" content="Personal page for the IoT Data Analysis course — DIC-1 assignment." />
+
+  <!-- Emoji favicon (a sleepy bear), so there's no broken icon request -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐻</text></svg>" />
+
+  <!-- Fonts: Fraunces + Noto Serif TC (display) + Hanken Grotesk + Noto Sans TC (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+
+    <!-- ============ HERO / PROFILE ============ -->
+    <header class="hero">
+      <div class="hero__head">
+        <img class="avatar" src="assets/avatar.jpg" alt="My avatar — a sleepy bear plushie" />
+        <div class="hero__id">
+          <!-- Greeting is set by app.js based on the time of day -->
+          <p class="greeting" id="greeting">Hello</p>
+          <h1 class="name" lang="zh-Hant">古富綿</h1>
+          <p class="role">First-year graduate student at National Chung Hsing University</p>
+        </div>
+      </div>
+
+      <p class="intro">
+        Hi! I'm a student who likes turning small ideas into simple, calming web
+        tools — one quote generator at a time. Right now I'm exploring front-end
+        development and the Internet of Things.
+      </p>
+
+      <!-- ============ LIVE CLOCK (required feature) ============ -->
+      <div class="clock" aria-label="Current time">
+        <time class="clock__time" id="clock" datetime="">--:--:--</time>
+        <button class="clock__toggle" id="format-toggle" type="button" aria-label="Switch clock to 12-hour format">12H</button>
+      </div>
+    </header>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <h2 class="section__title" id="skills-title">Skills</h2>
+      <ul class="tags">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+      </ul>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <h2 class="section__title" id="projects-title">Projects</h2>
+
+      <article class="project">
+        <h3 class="project__name">Daily Inspiration Quote Generator</h3>
+        <p class="project__desc" lang="zh-Hant">
+          一個簡單舒壓的隨機金句卡片產生器。點擊按鈕即可隨機切換名言與背景配色，並提供一鍵複製內文至剪貼簿的功能。
+        </p>
+        <ul class="tags tags--sm">
+          <li>HTML5</li>
+          <li>CSS3 (Variables &amp; Transitions)</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+        </ul>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Built with HTML, CSS and JavaScript for the IoT course, DIC-1.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

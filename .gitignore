@@ -1,0 +1,6 @@
+# macOS
+.DS_Store
+
+# Local-only Claude Code handoff notes — not part of the submission
+CLAUDE.md
+HANDOFF.md
